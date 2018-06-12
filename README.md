@@ -1,4 +1,6 @@
 # Inpainting
 ### Restauración de imágenes mediante pirámides Gaussianas
 
-En este proceso para restaurar una zona de la imagen, creamos una Pirámide Guassiana. En esta pirámide generamos la imagen cada vez con mejor tamaño, para rellenar la zona desconocida interpolamos sus bordes, hasta llegar a un tamaño en el que la zona desconocida haya desaparecido por completo. En ese momento volvemos a ampliar la imagen, sin zonas desconocidas, hasta el tamaño original. 
+Emplearemos una Pirámide Gaussiana para restaurar una zona de la imagen. La pirámide consiste en generar la imagen con menor tamaño cada vez, en cada reducción interpolamos los bordes de la zona desconocida hsata que llegará un nivel en el que la zona desconocida haya desaparecido por completo. En ese momento volvemos a ampliar la imagen, que ya no tiene zonas desconocidas, hasta el tamaño original.
+
+Se adjunta un documento que describe el proceso con más detalle y presenta algunas pruebas con la imagen de Lena.
